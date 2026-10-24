@@ -5,9 +5,9 @@
   "main": "dist/server.js",
   "type": "module",
   "scripts": {
-    "start": "node dist/server.js",
-    "dev": "nodemon --exec tsx src/server.ts",
-    "build": "tsc"
+    "start": "node api.js && node dist/server.js",
+    "dev": "node api.js && nodemon --exec tsx src/server.ts",
+    "build": "node api.js && tsc"
   },
   "keywords": [],
   "author": "",
